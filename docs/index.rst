@@ -311,7 +311,7 @@ Basic Amenities
 
 Information on **Basic Amenities** is presented in a series of subpages. Each subpage is dedicated to a particular category and includes:
 
-* a map displying the availability and sufficiency of the basic amenity; and
+* a map displaying the availability and sufficiency of the basic amenity; and
 * donut charts highlighting the percentage of MoSDs with sufficient availability of the amenity as well as main sources.
 
 
