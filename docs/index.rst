@@ -439,8 +439,15 @@ Follow the instructions below to download data for a single workspace. If you re
 
 1. Navigate to the workspace page of your project (see `Access the Data Update Interface`_ steps 1 - 4 for detailed instructions).
 2. In the rightmost column, click the |download| button. This will download all records of this workspace.
-  
-.. tip:: For surveys in languages other than English, make sure to correctly define the encoding when opening the data in Excel (see `Data Encoding in Excel`_ for details).
+4. You should now see the export data for the selected workspace with the following options:
+*Include text header 
+*Include code header 
+*Answers as text to download the responses as text 
+*Language with English as the default language  
+*Report date: Entering a date will limit the export to the last record before or equal to the selected date for each health facility. To export all historic records of a health facility, leave the field blank.
+
+.. tip:: It is advised to disable include text header in exporting data from a workspace for an easier alignment of the data in the statistical software of choice (e.g., R or STATA) as well as in Excel. For surveys in languages other than English, make sure to correctly define the encoding when opening the data in Excel (see `Data Encoding in Excel`_ for details). 
+
 
 Download the Entire Data Set
 ----------------------------
@@ -489,17 +496,21 @@ HeRAMS uses the concept of workspaces to manage user permissions. Each workspace
 * |download| **Download Data**: Downloads all records belonging to the selected workspace. See `Download Data`_ for more information.
 * |pencil-black| **Data Update**: This opens the data edit interface. More information on data editing and updating is available `here <#edit-date>`__.
 
-.. note: The number of buttons visible to users depends on your access rights and might vary from one workspace to another.
+.. note:: The number of buttons visible to users depends on your access rights and might vary from one workspace to another.
 
 Workspace Permissions
 ~~~~~~~~~~~~~~~~~~~~~
 
-There are two permission levels for workspaces:
+There are four permissions for workspaces:
 
-1. access to manage the underlying responses’ data; and
-2. full access (includes editing the workspace properties, token and responses’ data).
+1. Edit data 
+2. Download data 
+3. Manage users 
+4. Grant admin permissions 
 
-Users with the role of **Data Editor** have access to update the response data (option 1) while **Workspace Owners** might be given elevated permission (option 2) allowing them to add additional users to their workspace as well as to manage the underlying response data.
+A user with the role of **Workspace contributor** has the access to update the response data (option 1) while a **Workspace owner** is provided with additional permission (option 3) to add additional users to the workspace as well as to manage the underlying response data. 
+
+.. note:: Please refer to the Default User Roles and Permissions section for the roles and corresponding permissions provided to users at the workspace level.
 
 Add a User to a Workspace
 ~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -587,7 +598,20 @@ Add a User to a Project
 1. To grant a user access to a specific project, open the admin interface by clicking the |settings| button in the top right corner of the screen.
 2. In the navigation pane on the left, click `Projects <https://herams.org/project/index>`_ to display the list of all available projects.
 3. In the last of the table, you have several action buttons. Click the |share-icon| icon.
-4. You should now see a page similar to the image shown below. On the bottom half of the screen you can see a list of all users currently having access to this project and their permission level. In the top half the page you have the option to add a user. Start typing the users name in the top field. You will notice that the list of users is dynamically filtering. Select the user you would like to add.
+4. You should now see a page similar to the image shown below. On the bottom half of the screen you can see a list of all users currently having access to this project and their permission level. In the top half the page you have the option to add a user. Start typing the users name in the top field. You will notice that the list of users is dynamically filtering. Select the user you would like to add. 
+5. Use the checkboxes to select the appropriate permission levels:
+
+* View dashboard
+* Edit data
+* Download data
+* Manage workspaces
+* Configure dashboard
+* Edit settings
+* Manage users
+* Grant admin permissions
+
+6. A section on Default User Roles and Permissions is also provided for the project-level default roles and permissions of users.
+7. Click the share button to share the project to the selected user(s).
 
   .. image:: media/img/HeRAMS_project_share.png
   	:height: 300px
@@ -595,7 +619,7 @@ Add a User to a Project
 	:align: center
 
   .. tip: You can add multiple users add once as shown in the image above.
-
+  .. note: Sharing of grant admin permission is limited to some users provided with advanced admin roles (workspace and project level).
   .. note: If you cannot find a user, it means the user has not yet created an account. Ask the user to create an account by registering on the HeRAMS platform and then retry. Should the issue persist, contact your system administrator or send an email to `herams@who.int <mailto:herams@who.int?>`_.
 
 5. Use the checkboxes to select the appropriate permission level. See `above <#project-permissions>`__ for further details on project level permissions.
