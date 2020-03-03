@@ -95,9 +95,8 @@ Update your User Profile
 Each user has a profile associated with their account. This permits you do to customize your profile, change your email address or password without requiring additional support.
 
 1. To update your user profile or account details, click your username shown on the top right corner of the page.
-2. This opens your `user profile <https://herams.org/user/settings/profile>`_ and allows you to change your personal information such as your name, organization and contact details.
+2. This opens your `user profile <https://herams.org/user/settings/profile>`_ and allows you to change your personal information such as your name.
 
-.. note:: First name, last name and organization are mandatory fields.
 
 Change Password
 ---------------
