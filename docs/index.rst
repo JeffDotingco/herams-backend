@@ -102,10 +102,9 @@ Each user has a profile associated with their account. This permits you do to cu
 Change Password
 ---------------
 
-1. To alter your password, open your user profile as explained `above <#update-your-user-profile>`_.
-2. Click on the `Account <https://herams.org/user/settings/account>`_ link to access your account information.
-3. On the page opening, you should be able to change your email address and enter a new password.
-4. Make sure to click the |submit-en| button to confirm your changes.
+1. To change your pasword, click your username as explained above and click the Password button.
+2. Enter your current password, then enter a new password and confirm it in the Repeat password field.
+3. Click the Update password button to confirm the changes made.
 
 .. image:: media/vid/HeRAMS_change_password.gif
    :alt: change password video
